@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form for a request to FestDev</h1>
+      <p id="description">This is my test survey thank you for looking</p>
+    </header>
+    <main>
+      <div class="container">
+        <form id="survey-form">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="First and Last Name"
+            required
+          />
+          <label for="email" id="email-label">Email:</label>
+          <input id="email" type="email" placeholder="Email Address" required />
+          <label for="number" id="number-label">Age:</label>
+          <input
+            id="number"
+            type="number"
+            min="18"
+            max="65"
+            placeholder="Your age"
+          />
+          <label for="dropdown" id="dropdown-label">Education:</label>
+          <select id="dropdown" type="dropdown">
+            <option value="default" selected>Choose the highest level</option>
+            <option value="gymnasium">Gymnasium</option>
+            <option value="techschool">Technical School</option>
+            <option value="bachlor">Bachlor degree</option>
+            <option value="master">Master degree</option>
+            <option value="phd">PHD</option>
+          </select>
+          <div class="subcontainer">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label id="male-label" for="male">Male</label>
+          </div>
+          <div class="subcontainer">
+            <input type="radio" id="female" name="gender" value="female" />
+            <label id="female-label" for="female">Female</label>
+          </div>
+          <label id="dropdown2-label" for="dropdown2">Working preference</label>
+          <select id="dropdown2" type="dropdown2">
+            <option value="default" selected>
+              Choose prefered workign method
+            </option>
+            <option value="gymnasium">Home Office</option>
+            <option value="techschool">Office seat</option>
+            <option value="bachlor">Mix schedule</option>
+          </select>
+          <div id="grid">
+            <input id="java" type="checkbox" value="java" />
+            <label for="java">Java</label>
+            <input id="javascript" type="checkbox" value="javascript" />
+            <label for="javascript">Javascript</label>
+            <input id="python" type="checkbox" value="python" />
+            <label for="python">Python</label>
+            <input id="c++" type="checkbox" value="c++" />
+            <label for="c++">C++</label>
+            <input id="c#" type="checkbox" value="c#" />
+            <label for="c#">C#</label>
+            <input id="other" type="checkbox" value="other" />
+            <label for="other">Other</label>
+          </div>
+          <label for="message">Aditional info</label>
+          <textarea name="message" rows="5" cols="30"> </textarea>
+          <input id="submit" type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
